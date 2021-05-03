@@ -1,0 +1,3 @@
+include ':daggerbasics'
+include ':app'
+rootProject.name = "DaggerCodeKata"
