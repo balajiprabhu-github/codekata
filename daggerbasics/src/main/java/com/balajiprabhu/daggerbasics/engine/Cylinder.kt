@@ -1,3 +1,5 @@
 package com.balajiprabhu.daggerbasics.engine
 
-class Cylinder {}
+import javax.inject.Inject
+
+class Cylinder @Inject constructor(){}
