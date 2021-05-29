@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -29,6 +31,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    kapt {
+        generateStubs = true
+    }
 }
 
 dependencies {
@@ -42,6 +48,8 @@ dependencies {
     implementation 'com.google.dagger:dagger-android:2.35.1'
     implementation 'com.google.dagger:dagger-android-support:2.35.1'
     annotationProcessor 'com.google.dagger:dagger-android-processor:2.35.1'
+    kapt 'com.google.dagger:dagger-android-processor:2.35.1'
+    kapt 'com.google.dagger:dagger-compiler:2.33'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

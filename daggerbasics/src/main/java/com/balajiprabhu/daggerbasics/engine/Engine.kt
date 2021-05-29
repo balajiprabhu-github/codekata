@@ -1,20 +1,9 @@
 package com.balajiprabhu.daggerbasics.engine
 
-class Engine {
+import javax.inject.Inject
 
-    var block: Block
-    var cylinder: Cylinder
-    var sparkPlugs: SparkPlugs
+interface Engine {
 
-    constructor(block: Block,cylinder: Cylinder,sparkPlugs: SparkPlugs){
-        this.block = block
-        this.cylinder = cylinder
-        this.sparkPlugs = sparkPlugs
-        startEngine()
-    }
-
-    fun startEngine(){
-        println("Engine Started")
-    }
+    fun startEngine()
 
 }

@@ -1,3 +1,5 @@
 package com.balajiprabhu.daggerbasics.wheels
 
-class Tires {}
+import javax.inject.Inject
+
+class Tires @Inject constructor() {}

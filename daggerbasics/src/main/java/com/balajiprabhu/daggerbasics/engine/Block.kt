@@ -1,3 +1,5 @@
 package com.balajiprabhu.daggerbasics.engine
 
-class Block {}
+import javax.inject.Inject
+
+class Block @Inject constructor() {}
