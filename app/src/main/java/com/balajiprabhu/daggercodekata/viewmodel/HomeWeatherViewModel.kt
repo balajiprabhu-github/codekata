@@ -10,8 +10,9 @@ import com.balajiprabhu.daggercodekata.view.adapter.WeatherListAdapter
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.schedulers.Schedulers
 import java.util.*
+import javax.inject.Inject
 
-class HomeWeatherViewModel constructor(
+class HomeWeatherViewModel @Inject constructor(
     val weatherListAdapter: WeatherListAdapter,
     private val weatherRepository: WeatherRepository) : ViewModel(), LifecycleObserver {
 
