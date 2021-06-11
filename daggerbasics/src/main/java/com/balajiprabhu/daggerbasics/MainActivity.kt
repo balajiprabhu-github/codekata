@@ -3,7 +3,6 @@ package com.balajiprabhu.daggerbasics
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.balajiprabhu.daggerbasics.di.CarComponent
-import com.balajiprabhu.daggerbasics.di.DaggerCarComponent
 import com.balajiprabhu.daggerbasics.engine.Block
 import com.balajiprabhu.daggerbasics.engine.Cylinder
 import com.balajiprabhu.daggerbasics.engine.Engine
@@ -33,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         //car = Car(wheels, engine)
 
         //car = DaggerCarComponent.create().getCar()
-        val carComponent : CarComponent = DaggerCarComponent.create()
-        carComponent.inject(this)
+       // val carComponent : CarComponent = DaggerCarComponent.create()
+        //carComponent.inject(this)
 
         car.drive()
 
